@@ -11,3 +11,4 @@ ODESolver [.ipynb or .py] | General class to solve an ODE with a subclass to num
 ## SIR Plot <br/>
 ![SIR Plot](/script_version/fig.png) <br/>
 > SIR plot for ndays = 90 with a resolution (npoints) = 1000
+> beta varies over time as a result of preventive measures (social distancing, washing hands, etc.)

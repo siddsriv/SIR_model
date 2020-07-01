@@ -58,7 +58,9 @@ if __name__ == "__main__":
     solver = EulerMethod(sir)
     solver.set_init_conditions(sir.initial_conditions)
     #Decide time steps
-    time_steps, retstep = np.linspace(0, 90, 1000, retstep=True) #90 days; 1000 measurements(time steps or delta(x) for the Euler method)
+    ndays = 90
+    resolution = 1000
+    time_steps, retstep = np.linspace(0, ndays, resolution, retstep=True) #90 days; 1000 measurements(time steps or delta(x) for the Euler method)
     print(sir)
     print("Delta (timestep in next measurement): {}".format(retstep)) #Debugging time steps
     #Solve differential equation

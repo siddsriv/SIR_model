@@ -66,6 +66,7 @@ if __name__ == "__main__":
     #Solve differential equation
     u, t = solver.solve(time_steps)
     #Plot SIR
+    print("\nPlotting for {} days with a resolution of {} \n".format(ndays, resolution))
     plt.xkcd()
     plt.plot(t, u[:, 0], label="Susceptible")
     plt.plot(t, u[:, 1], label="Infected")
